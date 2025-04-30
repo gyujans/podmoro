@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro CAT Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Dashboard</h2>
+      <nav>
+        <a href="#pomodoro">Pomodoro Timer</a>
+        <a href="#media">Spotify & YouTube</a>
+        <a href="#countdown">CAT Countdown</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section id="pomodoro" class="card pink">
+        <h3>Pomodoro Timer</h3>
+        <div id="timer" class="timer-display">25:00</div>
+        <button id="startPause">Start</button>
+        <button id="reset">Reset</button>
+      </section>
+
+      <section id="media" class="card white">
+        <h3>Spotify & YouTube</h3>
+        <div class="media-grid">
+          <iframe src="https://open.spotify.com/embed/playlist/yourplaylistid" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe width="100%" height="80" src="https://www.youtube.com/embed/yourvideoid" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section id="countdown" class="card yellow">
+        <h3>CAT Exam Countdown</h3>
+        <p id="countdownDisplay" class="timer-display">Loading...</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
